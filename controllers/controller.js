@@ -17,7 +17,17 @@ const getDataAbout = async (req, res) => {
 
 }
 
+const getDataAContact = async (req, res) => {
+  const data = {
+      title: 'Contact Page',
+      message: 'Contact Me!'
+    }
+  res.render('contact', { data });
+
+}
+
 module.exports = {
     getDataAbout,
-    getData
+    getData,
+    getDataAContact
 }
